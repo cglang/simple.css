@@ -952,7 +952,11 @@ P R E F O R M A T T E D T E X T
           <label for="progress-bar">No attributes (indeterminate)</label>
           <progress id="progress-bar">progress</progress>
           <label for="progress-30">30%, max 100%</label>
-          <progress id="progress-30" max="100" value="30">30%</progress>
+          <progress id="progress-30" max="100" value="30"></progress>
+          <progress color="red" max="100" value="50"></progress>
+          <progress color="blue" max="100" value="40"></progress>
+          <progress color="green" max="100" value="50"></progress>
+          <progress color="orange" max="100" value="40"></progress>
           <footer>
             <p><a href="#top">[Top]</a></p>
           </footer>
@@ -1256,7 +1260,20 @@ P R E F O R M A T T E D T E X T
               <button type="button">&lt;button type=button&gt;</button>
               <button type="reset">&lt;button type=reset&gt;</button>
               <button type="button" disabled>&lt;button disabled&gt;</button>
+              <button type="text">&lt;button type=text&gt;</button>
             </p>
+          </fieldset>
+          <p><a href="#top">[Top]</a></p>
+          <fieldset id="forms__tags">
+            <legend>Tags</legend>
+            <div>
+              <span tag>default</span>
+              <span tag="default">default</span>
+              <span tag="primary">primary</span>
+              <span tag="success">success</span>
+              <span tag="error">error</span>
+              <span tag="warning">warning</span>
+            </div>
           </fieldset>
           <p><a href="#top">[Top]</a></p>
         </form>
