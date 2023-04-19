@@ -677,8 +677,6 @@ progress:indeterminate::-moz-progress-bar {
   background-color: var(--accent-bg);
 }
 
-
-
 /* Classes for buttons and notices */
 .button,
 .button:visited {
@@ -711,11 +709,10 @@ optgroup {
   display: block;
 }
 
-
 /* Tag */
 
-span[tag],
-span[tag="default"] {
+tag,
+tag[type="default"] {
   padding: 2px 5px 3px 5px;
   border-radius: var(--standard-border-radius);
   font-size: 0.9rem;
@@ -724,26 +721,35 @@ span[tag="default"] {
   background-color: var(--accent-bg);
 }
 
-span[tag="primary"] {
+tag[type="primary"] {
   border: 1px solid var(--color-blue);
   background-color: var(--color-blue);
   color: #fff;
 }
 
-span[tag="success"] {
+tag[type="success"] {
   border: 1px solid var(--color-green);
   background-color: var(--color-green);
   color: #fff;
 }
 
-span[tag="error"] {
+tag[type="error"] {
   border: 1px solid var(--color-red);
   background-color: var(--color-red);
   color: #fff;
 }
 
-span[tag="warning"] {
+tag[type="warning"] {
   border: 1px solid var(--color-orange);
   background-color: var(--color-orange);
   color: #fff;
+}
+
+tag {
+  padding: 2px 5px 3px 5px;
+  border-radius: var(--standard-border-radius);
+  font-size: 0.9rem;
+  line-height: 0.9rem;
+  border: 1px solid var(--border);
+  background-color: var(--accent-bg);
 }
